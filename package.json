@@ -17,6 +17,7 @@
   "devDependencies": {
     "@argos-ci/playwright": "^7.0.6",
     "@eslint/js": "^9.21.0",
+    "@playwright/test": "^1.61.0",
     "@types/node": "^25.9.3",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
