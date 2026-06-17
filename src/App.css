@@ -1,0 +1,125 @@
+.landing {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* Figma BG: vertical gradient #fafbff -> #eff1f9 over #f4f8fc */
+  background: linear-gradient(180deg, #c42d7d 0%, #eff1f9 101.29%), #f4f8fc;
+}
+
+/* Decorative 3D star, top-right in the mock */
+.landing__star {
+  position: absolute;
+  top: clamp(24px, 6vw, 80px);
+  right: clamp(24px, 6vw, 80px);
+  width: clamp(96px, 12vw, 189px);
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+}
+
+.landing__content {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.landing__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 50px;
+  border-radius: 24px;
+  background: #4776f3;
+  color: #fff;
+  font-weight: 800;
+  font-size: clamp(28px, 3.5vw, 46px);
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.landing__title {
+  margin: 28px 0 0;
+  color: #dced19;
+  font-weight: 900;
+  font-size: clamp(40px, 8vw, 80px);
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+}
+
+.landing__subtitle {
+  margin: 20px auto 0;
+  max-width: 64%;
+  color: #6d6e80;
+  font-weight: 400;
+  font-size: clamp(18px, 2.6vw, 36px);
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+.landing__bars {
+  width: 100%;
+  margin-top: clamp(40px, 6vw, 80px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 2.4vw, 32px);
+}
+
+/* ---- Status bar mockups ---- */
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: clamp(72px, 8vw, 128px);
+  padding: 0 clamp(28px, 4.4vw, 60px);
+  border-radius: 24px;
+  box-sizing: border-box;
+}
+
+.status-bar--dark {
+  background: #222227;
+  color: #fff;
+}
+
+.status-bar--light {
+  background: #fff;
+  color: #1f2934;
+  box-shadow: 0 16px 40px rgba(31, 41, 52, 0.06);
+}
+
+.status-bar__time {
+  font-weight: 500;
+  font-size: clamp(18px, 2.6vw, 36px);
+  letter-spacing: -0.01em;
+}
+
+.status-bar__icons {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2.2vw, 30px);
+}
+
+.status-bar__icon {
+  width: clamp(20px, 2.4vw, 32px);
+  height: clamp(20px, 2.4vw, 32px);
+  display: block;
+}
+
+.status-bar__icon--battery {
+  width: clamp(24px, 2.8vw, 38px);
+}
+
+@media (max-width: 720px) {
+  .landing__subtitle {
+    max-width: 90%;
+  }
+}

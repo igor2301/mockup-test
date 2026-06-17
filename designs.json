@@ -1,0 +1,20 @@
+{
+  "web": {
+    "browsers": [
+      "chrome",
+      "firefox",
+      "safari",
+      "edge"
+    ]
+  },
+  "figma": {
+    "depth": 1,
+    "configs": [
+      {
+        "figma_file_token": "mtr5gx3goCWw5Mfx1hb0Zv",
+        "figma_ids": ["0-1"],
+        "screenshot_names": ["android-status-bar"]
+      }
+    ]
+  }
+}
